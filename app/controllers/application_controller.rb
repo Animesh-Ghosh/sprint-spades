@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
 
   private
-    
+
     def pundit_user
       Current.user
     end
