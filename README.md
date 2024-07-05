@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sprint Spades: A simple planning poker tool using Hotwire and Rails.
 
-Things you may want to cover:
+## Local Setup
 
-* Ruby version
+To setup Sprint Spades on your local machine, follow the steps below:
 
-* System dependencies
+* Install Ruby
+  * ```brew install rbenv```
+  * ```rbenv init```
+  * ```ls -a ~```
+  * ```rbenv install 3.1.2```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Set up rails
+  * ```gem install bundler```
+  * ``` gem install rails -v 7.1.3```
+* Install Postgresql
+  * ```brew install postgresql```
+  * ```brew services start postgresql```
+* Install Redis
+  * ```brew install redis```
+  * ```brew services start redis```
+* Clone the repo
+* Set up your environment variables
+  * ```rails credentials:edit```
+  * Add the following
+    * ```secret_key_base: <your secret key>```
+    * ```google:```
+      * ```client_id: <your google client id>```
+      * ```client_secret: <your google client secret>```
+* Setup using bundler or bin/setup
+  * ```bundle install```
+  * ```bin/setup```
