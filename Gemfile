@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4", ">= 7.0.4.1"
+gem "rails", "~> 7.1.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -91,7 +91,5 @@ gem "data_migrate", "~> 8.5"
 gem "discard", "~> 1.2"
 gem "rolify", "~> 6.0"
 gem "dockerfile-rails", ">= 1.5", :group => :development
-
 gem "sentry-ruby", "~> 5.10"
-
 gem "sentry-rails", "~> 5.10"

@@ -35,7 +35,13 @@ RSpec.describe ApplicationHelper, type: :helper do
 
   describe "#button_text" do
     it "returns the button text" do
-      expect(concat helper.button_text(enabled_text: "Create Issue", disabled_text: "Loading...", icon_style: 'fa fa-solid fa-spinner')).to eq("<span class=\"show-when-enabled\">Create Issue</span><span class=\"show-when-disabled\">Loading... <i class=\"fa fa-solid fa-spinner\"></i></span>")
+      expected_html = <<~HTML.strip
+        <span class="show-when-enabled">Create Issue</span><span class="show-when-disabled">Loading... <i class="fa fa-solid fa-spinner"></i></span>
+      HTML
+
+      result = helper.button_text(enabled_text: "Create Issue", disabled_text: "Loading...", icon_style: 'fa fa-solid fa-spinner')
+
+      expect(result.strip).to eq(expected_html.strip)
     end
   end
 end
