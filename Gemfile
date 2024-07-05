@@ -9,8 +9,8 @@ gem "rails", "~> 7.1.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use pg as the database for Active Record
-gem "pg", "~> 1.4"
+# Use sqlite3 as the database for Active Record
+gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -90,6 +90,8 @@ gem "pundit", "~> 2.3"
 gem "data_migrate", "~> 8.5"
 gem "discard", "~> 1.2"
 gem "rolify", "~> 6.0"
-gem "dockerfile-rails", ">= 1.5", :group => :development
 gem "sentry-ruby", "~> 5.10"
 gem "sentry-rails", "~> 5.10"
+
+gem "activerecord-enhancedsqlite3-adapter", "~> 0.8.0"
+gem "litestream", "~> 0.10.4"
