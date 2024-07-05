@@ -15,9 +15,6 @@ To setup Sprint Spades on your local machine, follow the steps below:
 * Set up rails
   * ```gem install bundler```
   * ``` gem install rails -v 7.1.3```
-* Install Postgresql
-  * ```brew install postgresql```
-  * ```brew services start postgresql```
 * Install Redis
   * ```brew install redis```
   * ```brew services start redis```
