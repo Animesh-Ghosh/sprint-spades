@@ -211,7 +211,6 @@ GEM
       actionpack (>= 4.2)
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
-    pg (1.4.5)
     popper_js (2.11.6)
     psych (5.1.2)
       stringio
@@ -343,6 +342,8 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
+    sqlite3 (1.7.3-x86_64-darwin)
+    sqlite3 (1.7.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     stringio (3.1.1)
@@ -399,7 +400,6 @@ DEPENDENCIES
   jbuilder
   omniauth-google-oauth2 (~> 1.1)
   omniauth-rails_csrf_protection (~> 1.0)
-  pg (~> 1.4)
   puma (~> 5.0)
   pundit (~> 2.3)
   pundit-matchers (~> 1.8.4)
@@ -417,6 +417,7 @@ DEPENDENCIES
   simple_form (~> 5.1)
   simplecov (~> 0.22.0)
   sprockets-rails
+  sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
   tzinfo-data
