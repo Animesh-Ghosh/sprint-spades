@@ -92,3 +92,6 @@ gem "discard", "~> 1.2"
 gem "rolify", "~> 6.0"
 gem "sentry-ruby", "~> 5.10"
 gem "sentry-rails", "~> 5.10"
+
+gem "activerecord-enhancedsqlite3-adapter", "~> 0.8.0"
+gem "litestream", "~> 0.10.4"
